@@ -1,7 +1,24 @@
 @import '@a1rth/css-normalize/index.css';
 
+@font-face {
+    font-family: "Roboto";
+    src: url('./fonts/Roboto-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url('./fonts/Roboto-Bold.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
 
 body {
+    font-family: "Roboto", sans-serif;
     height: 100vh;
     margin: 0 auto;
     padding: 0;
@@ -20,7 +37,8 @@ body {
 }
 
 .games__container {
-     margin-bottom: 20px;
+    margin-bottom: 20px;
+    border: 2px solid gray;
 }
 
 .games__container h1 {
@@ -31,7 +49,7 @@ body {
 .genre__list {
     display: flex;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     width: 100%;
     height: 500px;
     gap: 50px
@@ -39,11 +57,35 @@ body {
 
 .genre__list--item {
     margin: 0 20px;
-    width: 200px;
     height: 400px;
-    padding: 0 40px;
+    width: 200px;
     border: 2px solid grey;
     border-radius: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+
+.game__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/*
+подумать над тем чтобы текст
+выравнивался по одной линии  
+*/
+
+.game__list--item {
+    background-color: red; /*временная заглушка*/
+    border-radius: 10px;
+    width: 166px;
+    height: fit-content;
+    text-align: center;
+    margin: 10px 0;
 }
 
 .show__more {

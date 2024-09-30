@@ -11,26 +11,22 @@ function Main() {
 
       <main>
         <div className="games__container">
-          <h1>Choose a game for evaluation!</h1>
+          <h1 lang="ru">Выбери игру на оценку!</h1>
           <ul className="genre__list">
             <li className="genre__list--item">
               <h2>SoulsLike</h2>
               <ul className="game__list">
                 <li className="game__list--item">
                   <h3>Dark Souls 1</h3>
-                  <img src="" alt="game logo" />
                 </li>
                 <li className="game__list--item">
                   <h3>Dark Souls 3 </h3>
-                  <img src="" alt="game logo" />
                 </li>
                 <li className="game__list--item">
                   <h3>Elden Ring</h3>
-                  <img src="" alt="game logo" />
                 </li>
                 <li className="game__list--item" style={{ display: "none" }}>
                   <h3>Bloodborne</h3>
-                  <img src="" alt="game logo" />
                 </li>
               </ul>
               {soulsListLength > 3 ? <a className="show__more" href="#">Show More</a> : ""}
@@ -40,11 +36,9 @@ function Main() {
               <ul className="game__list">
                 <li className="game__list--item">
                   <h3>Dota 2</h3>
-                  <img src="" alt="game logo" />
                 </li>
                 <li className="game__list--item">
                   <h3>League of Legends</h3>
-                  <img src="" alt="game logo" />
                 </li>
               </ul>
             </li>
