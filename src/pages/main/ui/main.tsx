@@ -21,6 +21,7 @@ function Main() {
                 </li>
                 <li className="game__list--item">
                   <h3>Dark Souls 3 </h3>
+                  <img src="/src/assets/ds3resizedV2.jpg" alt="game image"/>
                 </li>
                 <li className="game__list--item">
                   <h3>Elden Ring</h3>
