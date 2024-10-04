@@ -98,32 +98,44 @@ body {
     margin: 10px 0;
     overflow: hidden;
     padding: 1px; 
+    transition: all 0.3s ease !important;
 }
 
 .game__list--item:hover {
     transform: scale(1.1);
-    transition: all 500ms ease;
 }
 
 .game__list--item img {
     position: absolute;
     top: 0; 
-    left: 0; 
     width: 100%;
     height: 66px;
-    z-index: 0;
+    z-index: 1;
     margin: -1px;
-    filter: blur(1px);
-    transform: scale(1.02);
+    filter: brightness(50%); 
+    transition: all 0.3s ease !important;
 }
 
 .game__list--item h3 {
-    font-size: 1.1em;
-    z-index: 1;
-    position: relative;
+    font-size: 1em;
+    z-index: 2;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%, -50%);
     color: #ffffff;
+    font-weight: bold;
+    transition: opacity 500ms ease; 
 }
 
+.game__list--item:hover img {
+    filter: brightness(100%);
+}
+
+.game__list--item:hover h3 {
+    opacity: 0;
+}
 
 
 .show__more {
@@ -135,16 +147,29 @@ body {
     color: white;
     text-decoration: none;
     border-radius: 10px;
-    font-size: 16px;
     text-align: center;
-    transition: background-color 0.3s ease; 
     box-shadow: 0 4px 8px rgba(128, 126, 126, 0.5);
+    transition: all 0.3s ease !important;
+    /* 
+    Причина в этом медиа запросе из normalize, позже стоит исправить
+    @media (prefers-reduced-motion: reduce) {
+        *,
+        ::before,
+        ::after {
+          animation-duration: 0.01ms !important;
+          animation-iteration-count: 1 !important;
+          transition-duration: 0.01ms !important;
+          scroll-behavior: auto !important;
+        }
+      } */
+
 }
 
 .show__more:hover {
     background-color: white;
     color: black;
     border: 2px solid black;
+    transform: scale(1.05);
 }
 
 .footer {
