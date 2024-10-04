@@ -18,6 +18,7 @@ function Main() {
               <ul className="game__list">
                 <li className="game__list--item">
                   <h3>Dark Souls 1</h3>
+                  <img src="/src/assets/ds3resizedV2.jpg" alt="game image"/>
                 </li>
                 <li className="game__list--item">
                   <h3>Dark Souls 3 </h3>
@@ -25,9 +26,11 @@ function Main() {
                 </li>
                 <li className="game__list--item">
                   <h3>Elden Ring</h3>
+                  <img src="/src/assets/ds3resizedV2.jpg" alt="game image"/>
                 </li>
                 <li className="game__list--item" style={{ display: "none" }}>
                   <h3>Bloodborne</h3>
+                  <img src="/src/assets/ds3resizedV2.jpg" alt="game image"/>
                 </li>
               </ul>
               {soulsListLength > 3 ? <a className="show__more" href="#">Show More</a> : ""}
@@ -37,9 +40,11 @@ function Main() {
               <ul className="game__list">
                 <li className="game__list--item">
                   <h3>Dota 2</h3>
+                  <img src="/src/assets/ds3resizedV2.jpg" alt="game image"/>
                 </li>
                 <li className="game__list--item">
                   <h3>League of Legends</h3>
+                  <img src="/src/assets/ds3resizedV2.jpg" alt="game image"/>
                 </li>
               </ul>
             </li>
