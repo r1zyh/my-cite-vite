@@ -1,5 +1,5 @@
-import { Footer } from "../../../widgets/footer/ui";
-import { Header } from "../../../widgets/header/ui";
+import { Footer } from "@/widgets/footer/ui";
+import { Header } from "@/widgets/header/ui";
 
 export function Game(): JSX.Element {
   return (

@@ -1,5 +1,5 @@
 import { Routes, Route, BrowserRouter } from "react-router-dom";
-import Main from "../pages/main/ui/main";
+import { Main } from "@/pages/main/ui";
 import { AppRoute } from "../shared/const";
 import { NotFound } from "../pages/not-found/ui";
 import { Genre } from "../pages/genre/ui";
