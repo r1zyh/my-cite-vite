@@ -1,14 +1,12 @@
+import { Footer } from "../../../widgets/footer/ui/";
+import { Header } from "../../../widgets/header/ui";
+
 function Main() {
   const soulsListLength = 4;
 
   return (
     <div className="wrapper">
-      <header className="header">
-        <div className="logo">
-          <img src="" alt="my hopefully future self made logo" />
-        </div>
-      </header>
-
+      <Header />
       <main>
         <div className="games__container">
           <h1 lang="ru">Выбери игру на оценку!</h1>
@@ -87,35 +85,7 @@ function Main() {
           </ul>
         </div>
       </main>
-      <footer className="footer">
-        <div className="footer__container">
-          <div className="footer__contacts">
-            <ul className="contacts__list">
-              <li className="contacts__list--item">
-                <a href="https://t.me/kananev99" aria-label="Telegram">
-                  <img
-                    src="/src/assets/telegram.svg"
-                    alt="telegram image"
-                  />
-                </a>
-              </li>
-              <li className="contacts__list--item">
-                <a href="https://github.com/r1zyh" aria-label="github">
-                  <img
-                    src="/src/assets/github.svg"
-                    alt="github image"
-                  />
-                </a>
-              </li>
-              <li className="contacts__list--item">
-                <a href="https://vk.com/id296683026" aria-label="VK">
-                  <img src="/src/assets/vk.svg" alt="VKontakte image" />
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 }
