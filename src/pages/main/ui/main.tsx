@@ -3,6 +3,7 @@ import { Header } from "../../../widgets/header/ui";
 
 function Main() {
   const soulsListLength = 4;
+  const mobaListLength = 3;
 
   return (
     <div className="wrapper">
@@ -56,7 +57,9 @@ function Main() {
                   Show More
                 </a>
               ) : (
-                ""
+                <a className="show__more" href="#">
+                  Genre Page
+                </a>
               )}
             </li>
             <li className="genre__list--item">
@@ -80,7 +83,25 @@ function Main() {
                     height={66}
                   />
                 </li>
+                <li className="game__list--item">
+                  <h3>Deadlock</h3>
+                  <img
+                    src="/src/assets/Deadlock.png"
+                    alt="game image"
+                    width={166}
+                    height={66}
+                  />
+                </li>
               </ul>
+              {mobaListLength > 3 ? (
+                <a className="show__more" href="#">
+                  Show More
+                </a>
+              ) : (
+                <a className="show__more" href="#">
+                  Genre Page
+                </a>
+              )}
             </li>
           </ul>
         </div>

@@ -188,27 +188,44 @@ body {
     width: 600px;
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 10px;
 }
 
 .contacts__list--item {
+    position: relative;
     width: 45px;
     height: 45px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    padding: 7px 8px;
     border: 2px solid rgb(88, 88, 88);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
     border-radius: 50%;
     transition: all 0.3s ease !important;
+    transform-origin: center !important;
 }
 
 .contacts__list--item:hover {
-    transform: scale(1.1);
-    width: 50px;
-    height: 50px;
+  transform: scale(1.1);
 }
 
-.contacts__list--item:hover::after {
-    content: '';
+.contacts__list--item a::after {
+    content: attr(aria-label);
+    position: absolute;
+    bottom: -35px;
+    left: 50%;
+    padding: 5px 10px;
+    transform: translateX(-50%);
+    font-size: 0.8em;
+    background-color: #333;
+    color: #fff;
+    border-radius: 5px;
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.4s ease !important;
+}
+
+.contacts__list--item:hover a::after {
+    opacity: 1;
+    visibility: visible;
 }

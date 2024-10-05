@@ -6,17 +6,17 @@ export function Footer(): JSX.Element {
           <ul className="contacts__list">
             <li className="contacts__list--item">
               <a href="https://t.me/kananev99" aria-label="Telegram">
-                <img src="/src/assets/telegram.svg" alt="telegram image" />
+                <img src="/src/assets/telegram.svg" alt="telegram image" width={24} height={24} />
               </a>
             </li>
             <li className="contacts__list--item">
               <a href="https://github.com/r1zyh" aria-label="github">
-                <img src="/src/assets/github.svg" alt="github image" />
+                <img src="/src/assets/github.svg" alt="github image" width={24} height={24} />
               </a>
             </li>
             <li className="contacts__list--item">
               <a href="https://vk.com/id296683026" aria-label="VK">
-                <img src="/src/assets/vk.svg" alt="VKontakte image" />
+                <img src="/src/assets/vk.svg" alt="VKontakte image" width={24} height={24} />
               </a>
             </li>
           </ul>
