@@ -1,4 +1,6 @@
 export enum AppRoute {
-    Main = '/',
-    NotFound = '*',
-  }
+  Main = "/",
+  Genre = "/genre",
+  Game = "/game",
+  NotFound = "*",
+}

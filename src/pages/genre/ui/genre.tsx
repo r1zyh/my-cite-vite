@@ -1,11 +1,11 @@
 import { Footer } from "../../../widgets/footer/ui";
 import { Header } from "../../../widgets/header/ui";
 
-export function Game(): JSX.Element {
+export function Genre(): JSX.Element {
   return (
     <div className="wrapper">
       <Header />
-      <h1>Some Game Page template</h1>
+      <div>Some Genre Page template</div>
       <Footer />
     </div>
   );
