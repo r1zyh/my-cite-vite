@@ -1,4 +1,4 @@
-import { GenreListItem } from "./genre-list-item/ui";
+import { GenreListItem } from "./genre-list-item";
 import { GenreListWrapper } from "./genre-list-wrapper";
 
 export function GenreList(): JSX.Element {

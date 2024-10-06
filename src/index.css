@@ -73,6 +73,7 @@ body {
 
 .genre__list--item h2 {
     font-size: 1.4em;
+    cursor: pointer;
 }
 
 .game__list {
@@ -147,6 +148,7 @@ body {
     text-align: center;
     box-shadow: 0 4px 8px rgba(128, 126, 126, 0.5);
     transition: all 0.3s ease !important;
+    cursor: pointer;
     /* 
     Причина в этом медиа запросе из normalize, позже стоит исправить
     @media (prefers-reduced-motion: reduce) {
