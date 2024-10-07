@@ -2,7 +2,7 @@ import { Button } from "@/shared/ui/button/ui";
 
 export function GenreDescription(): JSX.Element {
   return (
-    <li className="genre__list--item">
+    <div className="genre__item--back">
       <h2>SoulsLike</h2>
       <p className="genre__description--text">
         {" "}
@@ -11,6 +11,6 @@ export function GenreDescription(): JSX.Element {
         storytelling, typically in a dark fantasy setting.{" "}
       </p>
       <Button text="Genre Page" />
-    </li>
+    </div>
   );
 }
