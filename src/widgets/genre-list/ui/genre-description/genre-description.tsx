@@ -13,7 +13,7 @@ export function GenreDescription({
 }: TGenreDescriptionProps): JSX.Element {
   return (
     <div className="genre__item--back">
-      <h2 onClick={click}>{title}</h2>
+      <h2 className="genre__title" onClick={click}>{title}</h2>
       <p className="genre__description--text"> {description} </p>
       <Button text="Genre Page" />
     </div>

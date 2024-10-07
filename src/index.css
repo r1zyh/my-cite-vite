@@ -72,9 +72,27 @@ body {
     perspective: 1000px;
 }
 
-.genre__list--item h2 {
+.genre__title {
     font-size: 1.4em;
     cursor: pointer;
+    position: relative;
+    display: inline-block;
+}
+
+.genre__title::after { 
+    content: ''; 
+    position: absolute;
+    left: 0; 
+    bottom: 0;
+    height: 2px;
+    width: 100%;
+    background-color: black;
+    transform: scaleX(0);
+    transition: transform 0.3s ease !important;
+}
+
+.genre__title:hover::after {
+    transform: scaleX(1);
 }
 
 .genre__list--inner {

@@ -50,7 +50,7 @@ export function GenreListItem(): JSX.Element {
             }`}
           >
             <div className="genre__item-front">
-              <h2 onClick={() => toggleDescription(index)}>{genre.title}</h2>
+              <h2 className="genre__title" onClick={() => toggleDescription(index)}>{genre.title}</h2>
               <GameList games={genres[index].games} />
               <Button text={gameListLength > 3 ? "Show More" : "Genre Page"} />
             </div>
