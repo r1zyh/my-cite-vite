@@ -196,7 +196,7 @@ body {
 .show__more {
     display: inline-block; 
     padding: 10px 20px;
-    margin: 20px 0;
+    margin: 20px 10px;
     background-color: #000000;
     white-space: nowrap;
     color: white;
@@ -206,6 +206,7 @@ body {
     box-shadow: 0 4px 8px rgba(128, 126, 126, 0.5);
     transition: all 0.3s ease !important;
     cursor: pointer;
+    border: 2px solid black;
     /* 
     Причина в этом медиа запросе из normalize, позже стоит исправить
     @media (prefers-reduced-motion: reduce) {
@@ -224,8 +225,7 @@ body {
 .show__more:hover {
     background-color: white;
     color: black;
-    border: 2px solid black;
-    transform: scale(1.05);
+    
 }
 
 .footer {
