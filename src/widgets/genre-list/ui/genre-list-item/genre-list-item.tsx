@@ -21,11 +21,31 @@ export function GenreListItem(): JSX.Element {
     {
       title: "MOBA",
       description:
-        "Multiplayer online battle arena (MOBA) is a subgenre of strategy video games in which two teams of players compete against each other on a predefined battlefield. Some text Some text Some text ",
+        "Multiplayer online battle arena (MOBA) is a subgenre of strategy video games in which two teams of players compete against each other on a predefined battlefield. Some text Some text Some text",
       games: [
         { title: "Dota 2", image: "/src/assets/dota2.png" },
-        { title: "League of Legends", image: "/src/assets/LoL.png" },
-        { title: "Deadlock", image: "/src/assets/Deadlock.png" },
+        { title: "League of Legends", image: "/src/assets/lol.png" },
+        { title: "Deadlock", image: "/src/assets/deadlock.png" },
+      ] as TGame[],
+    },
+    {
+      title: "Shooter",
+      description:
+        "Shooter video games or shooters are a subgenre of action video games where the focus is on the defeat of the character's enemies using ranged weapons given to the player. Some text Some text Some text",
+      games: [
+        { title: "CS 2", image: "/src/assets/cs2.png" },
+        { title: "Valorant", image: "/src/assets/valorant.png" },
+        { title: "Call of Duty: Warzone", image: "/src/assets/warzone.png" },
+      ] as TGame[],
+    },
+    {
+      title: "Shooter",
+      description:
+        "Shooter video games or shooters are a subgenre of action video games where the focus is on the defeat of the character's enemies using ranged weapons given to the player. Some text Some text Some text",
+      games: [
+        { title: "CS 2", image: "/src/assets/cs2.png" },
+        { title: "Valorant", image: "/src/assets/valorant.png" },
+        { title: "Call of Duty: Warzone", image: "/src/assets/warzone.png" },
       ] as TGame[],
     },
   ];

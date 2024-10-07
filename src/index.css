@@ -40,6 +40,7 @@ body {
 .games__container {
     margin-bottom: 20px;
     border: 2px solid gray;
+    width: 100%;
 }
 
 .games__container h1 {
@@ -225,6 +226,7 @@ body {
 .show__more:hover {
     background-color: white;
     color: black;
+    transform: scale(1.05);
     
 }
 
@@ -287,4 +289,20 @@ body {
 .contacts__list--item:hover a::after {
     opacity: 1;
     visibility: visible;
+}
+
+
+@media (max-width: 1200px) {
+    .games__container {
+        width: 100%;
+        height: 120vh;
+        margin: 0 auto;
+    }
+  
+    .genre__list {
+        display: grid; 
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 20px; 
+        justify-items: center;
+    }
 }
