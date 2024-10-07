@@ -109,7 +109,7 @@ body {
     padding: 20px 20px; 
 }
 
-.genre__list--item:hover .genre__list--inner {
+.genre__list--inner.flipped {
     transform: rotateY(180deg);
 }
 
