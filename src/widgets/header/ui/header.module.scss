@@ -1,0 +1,31 @@
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    &__logo {
+        display: inline-block;
+        margin: 5px 15px;
+        cursor: pointer;
+        transition: all 0.3s ease !important;
+
+        &:hover {
+            transform: rotate(10deg);
+        }
+    }
+
+    &__svg {
+        color: teal;
+        border-radius: 20%    
+    }
+
+    &__text {
+              font-size: 46px; 
+              fill:#FFFFFF;
+              font-family: Roboto, sans-serif;
+              font-weight: bold;
+              color: white;
+    }
+
+}
