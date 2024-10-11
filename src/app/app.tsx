@@ -5,8 +5,6 @@ import { NotFound } from '@/pages/not-found/ui';
 import { Game } from '@/pages/game/ui';
 import { Genre } from '@/pages/genre/ui';
 
-//Пофиксить ошибку stylelint в eslint
-
 const App = () => {
   return (
     <BrowserRouter>

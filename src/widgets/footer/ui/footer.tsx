@@ -1,5 +1,7 @@
 import styles from './footer.module.scss';
 
+//Пофиксить стили footer при grid отображении
+
 export const Footer = (): JSX.Element => {
   return (
     <footer className={styles.footer}>
