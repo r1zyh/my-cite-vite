@@ -1,17 +1,16 @@
-import { AppRoute } from "@/shared/const";
-import { Link } from "react-router-dom";
-import { GameListWrapper } from "./game-list-wrapper";
-import { TGame } from "./types";
+import { AppRoute } from '@/shared/const';
+import { Link } from 'react-router-dom';
+import { GameListWrapper } from './game-list-wrapper';
+import { TGame } from './types';
 
 type TGameListProps = {
   games?: TGame[];
 };
 
-export function GameList({ games }: TGameListProps): JSX.Element {
-
-  console.log('Game List if statement')
+export const GameList = ({ games }: TGameListProps): JSX.Element => {
+  console.log('Game List if statement');
   if (!games) {
-    return <></> // переделать 
+    return <></>; // переделать
   }
   return (
     <GameListWrapper>
@@ -25,4 +24,4 @@ export function GameList({ games }: TGameListProps): JSX.Element {
       ))}
     </GameListWrapper>
   );
-}
+};

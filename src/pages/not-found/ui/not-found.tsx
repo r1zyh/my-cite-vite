@@ -1,7 +1,7 @@
-import { Link } from "react-router-dom";
-import { AppRoute } from "../../../shared/const";
+import { Link } from 'react-router-dom';
+import { AppRoute } from '../../../shared/const';
 
-export function NotFound(): JSX.Element {
+export const NotFound = (): JSX.Element => {
   return (
     <div>
       <h1>404 Not Found</h1>
@@ -10,4 +10,4 @@ export function NotFound(): JSX.Element {
       </p>
     </div>
   );
-}
+};

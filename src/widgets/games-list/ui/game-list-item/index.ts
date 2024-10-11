@@ -1,1 +1,1 @@
-export * from "./game-list-item";
+export * from './game-list-item';

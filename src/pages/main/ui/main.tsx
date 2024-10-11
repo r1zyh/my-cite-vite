@@ -1,8 +1,8 @@
-import { Footer } from "@/widgets/footer/ui";
-import { Header } from "@/widgets/header/ui";
-import { GenreList } from "@/widgets/genre-list/ui";
+import { Footer } from '@/widgets/footer/ui';
+import { Header } from '@/widgets/header/ui';
+import { GenreList } from '@/widgets/genre-list/ui';
 
-export function Main() {
+export const Main = () => {
   return (
     <div className="wrapper">
       <Header />
@@ -15,4 +15,4 @@ export function Main() {
       <Footer />
     </div>
   );
-}
+};

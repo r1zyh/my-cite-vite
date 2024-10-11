@@ -1,1 +1,1 @@
-export * from "./genre-list-wrapper";
+export * from './genre-list-wrapper';

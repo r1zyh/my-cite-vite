@@ -1,9 +1,8 @@
-import { Link } from "react-router-dom";
-import { AppRoute } from "@/shared/const";
+import { Link } from 'react-router-dom';
+import { AppRoute } from '@/shared/const';
 import styles from './header.module.scss';
 
-export function Header(): JSX.Element {
-
+export const Header = (): JSX.Element => {
   return (
     <header className={styles.header}>
       <div className={styles.header__logo}>
@@ -29,4 +28,4 @@ export function Header(): JSX.Element {
       </div>
     </header>
   );
-}
+};
