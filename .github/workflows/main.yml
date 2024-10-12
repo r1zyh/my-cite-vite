@@ -16,8 +16,6 @@ jobs:
         run: npm install
       - name: build project
         run: npm run build
-      - name: use lint
-        run: npm run lint
       - name: use lint:fix
         run: npm run lint:fix
       - name: preview project
