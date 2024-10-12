@@ -1,0 +1,15 @@
+.wrapper {
+    min-height: 100vh;
+    width: 100%;
+}
+
+.games__container {
+    margin-bottom: 20px;
+    border: 2px solid gray;
+    width: 100%;
+
+    & h1 {
+        text-align: center;
+        font-size: 2em;
+    }
+}

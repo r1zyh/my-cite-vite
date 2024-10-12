@@ -1,13 +1,14 @@
 import { Footer } from '@/widgets/footer/ui';
 import { Header } from '@/widgets/header/ui';
 import { GenreList } from '@/widgets/genre-list/ui';
+import styles from './main.module.scss';
 
 export const Main = () => {
   return (
-    <div className="wrapper">
+    <div className={styles.wrapper}>
       <Header />
       <main>
-        <div className="games__container">
+        <div className={styles.games__container}>
           <h1 lang="ru">Выбери игру на оценку!</h1>
           <GenreList />
         </div>
