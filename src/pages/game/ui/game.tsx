@@ -30,7 +30,7 @@ export const Game = (): JSX.Element => {
               />
               <span className="rating__numeric">{4.7}</span>
             </div>
-            <Typography className='game__description'>
+            <Typography className="game__description">
               {' '}
               Dark Souls Remastered is a highly acclaimed Action Role-Playing game from
               FromSoftware, Inc., part of the renowned Dark Soul Series. The game was released on
@@ -41,7 +41,7 @@ export const Game = (): JSX.Element => {
               Abyss DLC.
             </Typography>
           </div>
-          <ReviewSection/>
+          <ReviewSection />
         </div>
       </main>
     </div>

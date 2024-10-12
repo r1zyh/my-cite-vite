@@ -1,33 +1,33 @@
 @mixin title-styles {
-    font-size: 1.4em;
-    cursor: pointer;
-    position: relative;
-    display: inline-block;
+  font-size: 1.4em;
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
 
-    &::after {
-        content: '';
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        height: 2px;
-        width: 100%;
-        background-color: black;
-        transform: scaleX(0);
-        transition: transform 0.3s ease !important;
-    }
+  &::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 100%;
+    background-color: black;
+    transform: scaleX(0);
+    transition: transform 0.3s ease !important;
+  }
 
-    &:hover::after {
-        transform: scaleX(1);
-    }
+  &:hover::after {
+    transform: scaleX(1);
+  }
 }
 
 @mixin genre-item {
-        position: absolute;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        backface-visibility: hidden;
-        width: 100%;
-        height: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  backface-visibility: hidden;
+  width: 100%;
+  height: 100%;
 }

@@ -9,8 +9,7 @@ type TGameListItemProps = {
 };
 
 export const GameListItem = ({ game }: TGameListItemProps): JSX.Element => {
-
-  const {title, image} = game;
+  const { title, image } = game;
 
   return (
     <li className={styles['game__list--item']}>

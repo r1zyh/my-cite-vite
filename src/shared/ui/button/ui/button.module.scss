@@ -1,21 +1,21 @@
 .show__more {
-    display: inline-block; 
-    padding: 10px 20px;
-    margin: 20px 10px;
-    background-color: #000000;
-    white-space: nowrap;
-    color: white;
-    text-decoration: none;
-    border-radius: 10px;
-    text-align: center;
-    box-shadow: 0 4px 8px rgba(128, 126, 126, 0.5);
-    transition: all 0.3s ease !important;
-    cursor: pointer;
-    border: 2px solid black;
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 20px 10px;
+  background-color: #000000;
+  white-space: nowrap;
+  color: white;
+  text-decoration: none;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(128, 126, 126, 0.5);
+  transition: all 0.3s ease !important;
+  cursor: pointer;
+  border: 2px solid black;
 
-    &:hover {
-        background-color: white;
-        color: black;
-        transform: scale(1.05);
-    }
+  &:hover {
+    background-color: white;
+    color: black;
+    transform: scale(1.05);
+  }
 }

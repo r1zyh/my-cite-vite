@@ -1,4 +1,4 @@
-import { Rating, Typography } from "@mui/material";
+import { Rating, Typography } from '@mui/material';
 
 export const ReviewListItem = (): JSX.Element => {
   return (
