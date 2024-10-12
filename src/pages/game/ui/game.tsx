@@ -1,4 +1,5 @@
 import { Header } from '@/widgets/header/ui';
+import { ReviewSection } from '@/widgets/review-section';
 import { Rating } from '@mui/material';
 import Typography from '@mui/material/Typography';
 
@@ -29,7 +30,7 @@ export const Game = (): JSX.Element => {
               />
               <span className="rating__numeric">{4.7}</span>
             </div>
-            <Typography sx={{ width: '63%', lineHeight: '2', textAlign: 'justify' }}>
+            <Typography className='game__description'>
               {' '}
               Dark Souls Remastered is a highly acclaimed Action Role-Playing game from
               FromSoftware, Inc., part of the renowned Dark Soul Series. The game was released on
@@ -40,79 +41,7 @@ export const Game = (): JSX.Element => {
               Abyss DLC.
             </Typography>
           </div>
-          <div className="review__section">
-            <ul className="review__list">
-              <li className="review__list--item">
-                <div className="review__user">
-                  <img src="/src/assets/Avatar Angelina.jpg" alt="user avatar" className="review__avatar" />
-                  <span className="reviews__user--name">Mariya Filatova</span>
-                </div>
-                <div className="review__info">
-                  <Rating
-                    className="review__rating"
-                    sx={{ fontSize: '30px' }}
-                    name="simple-readonly"
-                    size="large"
-                    readOnly
-                    precision={0.1}
-                    value={5}
-                  />
-                  <Typography className="review__info--text">
-                    This is quite a good game, had a lot of fun playing both PVE and PVP content
-                    with coop. This is quite a good game, had a lot of fun playing both PVE and PVP
-                    content with coop. This is quite a good game, had a lot of fun playing both PVE
-                    and PVP content with coop.
-                  </Typography>
-                </div>
-              </li>
-              <li className="review__list--item">
-                <div className="review__user">
-                  <img src="/src/assets/Avatar Max.jpg" alt="user avatar" className="review__avatar" />
-                  <span className="reviews__user-name">Andrei Pahomov</span>
-                </div>
-                <div className="review__info">
-                  <Rating
-                    className="review__rating"
-                    sx={{ fontSize: '30px' }}
-                    name="simple-readonly"
-                    size="large"
-                    readOnly
-                    precision={0.1}
-                    value={4.7}
-                  />
-                  <Typography className="review__info--text">
-                    This is quite a good game, had a lot of fun playing both PVE and PVP content
-                    with coop. This is quite a good game, had a lot of fun playing both PVE and PVP
-                    content with coop. This is quite a good game, had a lot of fun playing both PVE
-                    and PVP content with coop.
-                  </Typography>
-                </div>
-              </li>
-              <li className="review__list--item">
-                <div className="review__user">
-                  <img src="/src/assets/Avatar Max.jpg" alt="user avatar" className="review__avatar" />
-                  <span className="reviews__user-name">Kirill Ananyev</span>
-                </div>
-                <div className="review__info">
-                  <Rating
-                    className="review__rating"
-                    sx={{ fontSize: '30px' }}
-                    name="simple-readonly"
-                    size="large"
-                    readOnly
-                    precision={0.1}
-                    value={3.4}
-                  />
-                  <Typography className="review__info--text">
-                    This is quite a good game, had a lot of fun playing both PVE and PVP content
-                    with coop. This is quite a good game, had a lot of fun playing both PVE and PVP
-                    content with coop. This is quite a good game, had a lot of fun playing both PVE
-                    and PVP content with coop.
-                  </Typography>
-                </div>
-              </li>
-            </ul>
-          </div>
+          <ReviewSection/>
         </div>
       </main>
     </div>

@@ -14,7 +14,7 @@ export const GameList = ({ games }: TGameListProps): JSX.Element => {
   return (
     <GameListWrapper>
       {games.map((game) => (
-        <GameListItem game={game} />
+        <GameListItem game={game} key={game.title} />
       ))}
     </GameListWrapper>
   );
