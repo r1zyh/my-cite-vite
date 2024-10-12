@@ -16,6 +16,19 @@
     font-display: swap;
 }
 
+ /* 
+    Причина в этом медиа запросе из normalize, позже стоит исправить
+    @media (prefers-reduced-motion: reduce) {
+        *,
+        ::before,
+        ::after {
+          animation-duration: 0.01ms !important;
+          animation-iteration-count: 1 !important;
+          transition-duration: 0.01ms !important;
+          scroll-behavior: auto !important;
+        }
+      } */
+
 
 body {
     font-family: "Roboto", sans-serif;
@@ -100,38 +113,3 @@ body {
     opacity: 0;
 }
 
-
-.show__more {
-    display: inline-block; 
-    padding: 10px 20px;
-    margin: 20px 10px;
-    background-color: #000000;
-    white-space: nowrap;
-    color: white;
-    text-decoration: none;
-    border-radius: 10px;
-    text-align: center;
-    box-shadow: 0 4px 8px rgba(128, 126, 126, 0.5);
-    transition: all 0.3s ease !important;
-    cursor: pointer;
-    border: 2px solid black;
-    /* 
-    Причина в этом медиа запросе из normalize, позже стоит исправить
-    @media (prefers-reduced-motion: reduce) {
-        *,
-        ::before,
-        ::after {
-          animation-duration: 0.01ms !important;
-          animation-iteration-count: 1 !important;
-          transition-duration: 0.01ms !important;
-          scroll-behavior: auto !important;
-        }
-      } */
-
-}
-
-.show__more:hover {
-    background-color: white;
-    color: black;
-    transform: scale(1.05);
-}
