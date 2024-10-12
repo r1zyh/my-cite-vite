@@ -16,6 +16,19 @@
     font-display: swap;
 }
 
+ /* 
+    Причина в этом медиа запросе из normalize, позже стоит исправить
+    @media (prefers-reduced-motion: reduce) {
+        *,
+        ::before,
+        ::after {
+          animation-duration: 0.01ms !important;
+          animation-iteration-count: 1 !important;
+          transition-duration: 0.01ms !important;
+          scroll-behavior: auto !important;
+        }
+      } */
+
 
 body {
     font-family: "Roboto", sans-serif;
@@ -30,24 +43,6 @@ body {
     width: 100%;
 }
 
-.header {
-    width: 100%;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-}
-
-.logo {
-    display: inline-block;
-    margin: 5px 15px;
-    cursor: pointer;
-    transition: all 0.3s ease !important;
-}
-
-.logo:hover {
-    transform: rotate(10deg);
-}
-
 .games__container {
     margin-bottom: 20px;
     border: 2px solid gray;
@@ -58,94 +53,6 @@ body {
     text-align: center;
     font-size: 2em;
 }
-
-
-.genre__list {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 500px;
-    gap: 50px;
-    
-}
-
-.genre__list--item {
-    margin: 0 20px;
-    height: 430px;
-    width: 230px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
-    border: 2px solid black;
-    border-radius: 10px;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-direction: column;
-    perspective: 1000px;
-}
-
-.genre__title {
-    font-size: 1.4em;
-    cursor: pointer;
-    position: relative;
-    display: inline-block;
-}
-
-.genre__title::after { 
-    content: ''; 
-    position: absolute;
-    left: 0; 
-    bottom: 0;
-    height: 2px;
-    width: 100%;
-    background-color: black;
-    transform: scaleX(0);
-    transition: transform 0.3s ease !important;
-}
-
-.genre__title:hover::after {
-    transform: scaleX(1);
-}
-
-.genre__list--inner {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    height: 430px;
-    width: 230px;
-    transform-style: preserve-3d;
-    transition: transform 0.6s !important;
-}
-
-.genre__item-front,
-.genre__item--back {
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    backface-visibility: hidden;
-    width: 100%;
-    height: 100%;
-}
-
-.genre__item--back {
-    transform: rotateY(180deg);
-}
-
-/*нужно сделать универсальное оформление карточек чтобы название категории и кнопка всегда были на одном месте*/
-
-.genre__description--text {
-    padding: 20px 20px; 
-}
-
-.genre__list--inner.flipped {
-    transform: rotateY(180deg);
-}
-
-
 
 .game__list {
     display: flex;
@@ -206,114 +113,3 @@ body {
     opacity: 0;
 }
 
-
-.show__more {
-    display: inline-block; 
-    padding: 10px 20px;
-    margin: 20px 10px;
-    background-color: #000000;
-    white-space: nowrap;
-    color: white;
-    text-decoration: none;
-    border-radius: 10px;
-    text-align: center;
-    box-shadow: 0 4px 8px rgba(128, 126, 126, 0.5);
-    transition: all 0.3s ease !important;
-    cursor: pointer;
-    border: 2px solid black;
-    /* 
-    Причина в этом медиа запросе из normalize, позже стоит исправить
-    @media (prefers-reduced-motion: reduce) {
-        *,
-        ::before,
-        ::after {
-          animation-duration: 0.01ms !important;
-          animation-iteration-count: 1 !important;
-          transition-duration: 0.01ms !important;
-          scroll-behavior: auto !important;
-        }
-      } */
-
-}
-
-.show__more:hover {
-    background-color: white;
-    color: black;
-    transform: scale(1.05);
-}
-
-.footer {
-    margin: 0 auto;
-    height: 120px;
-}
-
-.footer__container {
-    width: 100%;
-    margin: 20px 0;
-    padding: 20px 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.contacts__list {
-    width: 600px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 15px;
-}
-
-.contacts__list--item {
-    position: relative;
-    width: 45px;
-    height: 45px;
-    padding: 7px 8px;
-    border: 2px solid rgb(88, 88, 88);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-    border-radius: 50%;
-    transition: all 0.3s ease !important;
-    transform-origin: center !important;
-}
-
-.contacts__list--item:hover {
-  transform: scale(1.1);
-}
-
-.contacts__list--item a::after {
-    content: attr(aria-label);
-    position: absolute;
-    bottom: -35px;
-    left: 50%;
-    padding: 5px 10px;
-    transform: translateX(-50%);
-    font-size: 0.8em;
-    background-color: #333;
-    color: #fff;
-    border-radius: 5px;
-    white-space: nowrap;
-    opacity: 0;
-    visibility: hidden;
-    transition: all 0.4s ease !important;
-}
-
-.contacts__list--item:hover a::after {
-    opacity: 1;
-    visibility: visible;
-}
-
-
-@media (max-width: 1200px) {
-    .games__container {
-        width: 100%;
-        height: 120vh;
-        margin: 0 auto;
-    }
-  
-    .genre__list {
-        display: grid; 
-        grid-template-columns: repeat(2, 300px); 
-        gap: 20px; 
-        justify-items: center;
-    }
-}

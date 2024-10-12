@@ -1,10 +1,10 @@
-import { GenreListItem } from "./genre-list-item";
-import { GenreListWrapper } from "./genre-list-wrapper";
+import { GenreListItem } from './genre-list-item';
+import { GenreListWrapper } from './genre-list-wrapper';
 
-export function GenreList(): JSX.Element {
+export const GenreList = (): JSX.Element => {
   return (
     <GenreListWrapper>
       <GenreListItem />
     </GenreListWrapper>
   );
-}
+};

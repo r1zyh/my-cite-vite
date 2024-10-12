@@ -1,7 +1,7 @@
-import { Footer } from "@/widgets/footer/ui";
-import { Header } from "@/widgets/header/ui";
+import { Footer } from '@/widgets/footer/ui';
+import { Header } from '@/widgets/header/ui';
 
-export function Genre(): JSX.Element {
+export const Genre = (): JSX.Element => {
   return (
     <div className="wrapper">
       <Header />
@@ -9,4 +9,4 @@ export function Genre(): JSX.Element {
       <Footer />
     </div>
   );
-}
+};

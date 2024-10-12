@@ -1,5 +1,6 @@
-import { Button } from "@/shared/ui/button/ui";
-import Typography from "@mui/material/Typography";
+import { Button } from '@/shared/ui/button/ui';
+import Typography from '@mui/material/Typography';
+import styles from './genre-description.module.scss';
 
 type TGenreDescriptionProps = {
   title: string;
@@ -7,16 +8,18 @@ type TGenreDescriptionProps = {
   description: string;
 };
 
-export function GenreDescription({
+export const GenreDescription = ({
   title,
   click,
   description,
-}: TGenreDescriptionProps): JSX.Element {
+}: TGenreDescriptionProps): JSX.Element => {
   return (
-    <div className="genre__item--back">
-      <h2 className="genre__title" onClick={click}>{title}</h2>
-      <Typography className="genre__description--text"> {description} </Typography>
+    <div className={styles['genre__item--back']}>
+      <h2 className={styles.genre__title} onClick={click}>
+        {title}
+      </h2>
+      <Typography className={styles['genre__description--text']}> {description} </Typography>
       <Button text="Genre Page" />
     </div>
-  ) 
-}
+  );
+};

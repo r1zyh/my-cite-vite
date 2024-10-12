@@ -1,1 +1,1 @@
-export * from "./game-list-wrapper";
+export * from './game-list-wrapper';
