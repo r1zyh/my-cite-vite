@@ -20,14 +20,15 @@ export default {
     "react-refresh": eslintReactRefresh,
     prettier: prettierPlugin,
   },
-  ignores: [ 
+  ignores: [
     "dist",
     "node_modules",
     "coverage",
     "eslint.config.js",
     "package-lock.json",
     "package.json",
-    "git"],
+    "git",
+  ],
   ...js.configs.recommended,
   ...tseslint.configs.recommended,
   languageOptions: {
