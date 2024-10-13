@@ -1,23 +1,17 @@
-import { Rating, Typography } from '@mui/material';
+import { Typography } from '@mui/material';
+import styles from './review-list-item.module.scss';
+import { CustomRating } from '@/shared/ui/rating/ui';
 
 export const ReviewListItem = (): JSX.Element => {
   return (
-    <li className="review__list--item">
-      <div className="review__user">
-        <img src="/src/assets/Avatar Angelina.jpg" alt="user avatar" className="review__avatar" />
-        <span className="reviews__user--name">Mariya Filatova</span>
+    <li className={styles['review__list--item']}>
+      <div className="user">
+        <img src="/src/assets/Avatar Angelina.jpg" alt="user avatar" className={styles.avatar} />
+        <span className={styles.name}>Mariya Filatova</span>
       </div>
-      <div className="review__info">
-        <Rating
-          className="review__rating"
-          sx={{ fontSize: '30px' }}
-          name="simple-readonly"
-          size="large"
-          readOnly
-          precision={0.1}
-          value={5}
-        />
-        <Typography className="review__info--text">
+      <div className="info">
+        <CustomRating size="30px" precision={0.1} value={5} />
+        <Typography className={styles.text}>
           This is quite a good game, had a lot of fun playing both PVE and PVP content with coop.
           This is quite a good game, had a lot of fun playing both PVE and PVP content with coop.
           This is quite a good game, had a lot of fun playing both PVE and PVP content with coop.
