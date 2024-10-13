@@ -1,20 +1,20 @@
 .review__list--item {
-    width: 53%;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    margin: 20px 0;
-    gap: 15px;
+  width: 53%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 20px 0;
+  gap: 15px;
 
-    & .avatar {  
-        border-radius: 50%;
-        padding: 10px 0;
-    }
-    & .name {  
-        font-size: 1em;
-    }
+  & .avatar {
+    border-radius: 50%;
+    padding: 10px 0;
+  }
+  & .name {
+    font-size: 1em;
+  }
 }
-  
-.text {  
-    text-align: justify;
-}  
+
+.text {
+  text-align: justify;
+}
