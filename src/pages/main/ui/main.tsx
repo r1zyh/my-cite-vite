@@ -9,7 +9,7 @@ export const Main = () => {
       <Header />
       <main>
         <div className={styles.games__container}>
-          <h1 lang="ru">Выбери игру на оценку!</h1>
+          <h1 lang="ru">Давай оценим!</h1>
           <GenreList />
         </div>
       </main>

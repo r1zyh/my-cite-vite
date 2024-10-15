@@ -6,5 +6,10 @@ type TReviewSectionWrapperProps = {
 };
 
 export const ReviewSectionWrapper = ({ children }: TReviewSectionWrapperProps): JSX.Element => {
-  return <div className={styles.review__section}>{children}</div>;
+  return (
+    <div className={styles.review__section}>
+      <h2 className={styles.title}>Reviews: 3</h2>
+      {children}
+    </div>
+  );
 };

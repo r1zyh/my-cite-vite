@@ -13,7 +13,7 @@
     width: 100%;
     background-color: black;
     transform: scaleX(0);
-    transition: transform 0.3s ease !important;
+    transition: transform 0.3s ease;
   }
 
   &:hover::after {

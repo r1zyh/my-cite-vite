@@ -1,4 +1,4 @@
-@import '@a1rth/css-normalize/index.css';
+@import './normalize.css';
 
 @font-face {
   font-family: 'Roboto';
@@ -15,19 +15,6 @@
   font-style: normal;
   font-display: swap;
 }
-
-/* 
-    Причина в этом медиа запросе из normalize, позже стоит исправить
-    @media (prefers-reduced-motion: reduce) {
-        *,
-        ::before,
-        ::after {
-          animation-duration: 0.01ms !important;
-          animation-iteration-count: 1 !important;
-          transition-duration: 0.01ms !important;
-          scroll-behavior: auto !important;
-        }
-      } */
 
 body {
   font-family: 'Roboto', sans-serif;
