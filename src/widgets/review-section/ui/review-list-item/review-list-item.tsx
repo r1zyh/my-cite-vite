@@ -10,7 +10,7 @@ export const ReviewListItem = (): JSX.Element => {
         <span className={styles.name}>Mariya Filatova</span>
       </div>
       <div className="info">
-        <CustomRating size="30px" precision={0.1} value={5} />
+        <CustomRating size="30px" precision={0.1} value={5} readOnly />
         <Typography className={styles.text}>
           This is quite a good game, had a lot of fun playing both PVE and PVP content with coop.
           This is quite a good game, had a lot of fun playing both PVE and PVP content with coop.

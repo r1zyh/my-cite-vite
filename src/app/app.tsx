@@ -6,6 +6,8 @@ import { Game } from '@/pages/game/ui';
 import { Genre } from '@/pages/genre/ui';
 
 const App = () => {
+  // Вынести элемент кнопки в shared для пере-использования, а элементы review и карточек игр из main в entities
+
   return (
     <BrowserRouter>
       <Routes>

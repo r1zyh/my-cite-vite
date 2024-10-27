@@ -4,15 +4,16 @@ type TCustomRating = {
   size: string;
   precision: number;
   value: number;
+  readOnly?: boolean;
 };
 
-export const CustomRating = ({ size, precision, value }: TCustomRating): JSX.Element => {
+export const CustomRating = ({ size, precision, value, readOnly }: TCustomRating): JSX.Element => {
   return (
     <Rating
       sx={{ fontSize: size }}
       name="simple-readonly"
       size="large"
-      readOnly
+      readOnly={readOnly}
       precision={precision}
       value={value}
     />
