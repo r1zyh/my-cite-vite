@@ -1,10 +1,18 @@
 import { Link } from 'react-router-dom';
 import { AppRoute } from '@/shared/const';
 import styles from './header.module.scss';
+import { Brightness4, Brightness7 } from '@mui/icons-material';
+import { Box } from '@mui/material';
 
-export const Header = (): JSX.Element => {
+type THeaderProps = {
+  lightTheme: boolean;
+  onToggleTheme: () => void;
+};
+
+export const Header = ({ lightTheme, onToggleTheme }: THeaderProps): JSX.Element => {
   return (
     <header className={styles.header}>
+      <Box onClick={onToggleTheme}>{lightTheme ? <Brightness4 /> : <Brightness7 />}</Box>
       <div className={styles.header__logo}>
         <Link to={AppRoute.Main}>
           <svg
