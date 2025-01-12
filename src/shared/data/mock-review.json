@@ -1,0 +1,55 @@
+[
+  {
+    "id": "d85853b8-2e72-4c9b-bb41-f031190ca02e1",
+    "date": "2019-05-08T14:13:56.569Z",
+    "user": {
+      "name": "Bebrus",
+      "avatarUrl": "/src/assets/Avatar Max.jpg"
+    },
+    "comment": "This is quite a good game, had a lot of fun playing both PVE and PVP content with coop. This is quite a good game, had a lot of fun playing both PVE and PVP content with coop.",
+    "rating": 5
+  },
+  {
+    "id": "d85853b8-2e72-4c9b-bb41-f031190ca02e4wq3",
+    "date": "2019-05-08T14:13:56.569Z",
+    "user": {
+      "name": "Giga Morj",
+      "avatarUrl": "/src/assets/Avatar Max.jpg"
+    },
+    "comment": "This is quite a good game, had a lot of fun playing both PVE and PVP content with coop.",
+    "rating": 3
+  },
+  {
+    "id": "d85853b8-2e72-4c9b-bb41-f031190ca02e2",
+    "date": "2019-05-08T14:13:56.569Z",
+    "user": {
+      "name": "Vova Gysev",
+      "avatarUrl": "/src/assets/Avatar Max.jpg",
+      "isPro": true
+    },
+    "comment": "This is quite a good game, had a lot of fun playing both PVE and PVP content with coop.This is quite a good game, had a lot of fun playing both PVE and PVP content with coop.",
+    "rating": 4
+  },
+  {
+    "id": "d85853b8-2e72-4c9b-bb41-f031190ca02e3",
+    "date": "2019-05-08T14:13:56.569Z",
+    "user": {
+      "name": "Emilia Shchelk",
+      "avatarUrl": "/src/assets/Avatar Angelina.jpg",
+      "isPro": false
+    },
+    "comment": "This is quite a good game, had a lot of fun playing both PVE and PVP content with coop This is quite a good game, had a lot of fun playing both PVE and PVP content with coop.",
+    "rating": 4
+  },
+  {
+    "id": "d85853b8-2e72-4c9b-bb41-f031190ca02e35346d1",
+    "date": "2019-05-08T14:13:56.569Z",
+    "user": {
+      "name": "Emilia Shchelk",
+      "avatarUrl": "/src/assets/Avatar Angelina.jpg",
+      "isPro": false
+    },
+    "comment": "This is quite a good game, had a lot of fun playing both PVE and PVP content with coop This is quite a good game, had a lot of fun playing both PVE and PVP content with coop.",
+    "rating": 2
+  }
+]
