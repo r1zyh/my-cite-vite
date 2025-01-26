@@ -41,3 +41,41 @@ body.dark {
   --color--tertiary: #282c34;
   --border-style: solid;
 }
+
+.games__list {
+  display: grid;  
+  grid-template-columns: repeat(auto-fill, minmax(250px, 280px));
+  gap: 16px;
+  height: auto;                
+  min-height: 200px;                    
+  transition: height 0.3s ease-in-out;   
+  justify-content: center;
+}
+
+.games__list--item {
+  background: #fff;
+  padding: 16px;                    
+  border-radius: 8px;
+  height: 100px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
+.title {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.game__studio {
+  font-size: 14px;
+  color: #666;
+}
+
+.genre__page {
+  width: 100%;
+  min-height: 100vh;
+  padding-top: 40px;
+}
+
+.games__grid {
+  height: auto;
+}
