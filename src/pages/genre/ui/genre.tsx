@@ -114,11 +114,6 @@ export const Genre = (): JSX.Element => {
                 <img src="#" alt="game__preview" />
                 <p className="game__studio">Bandai Namco</p>
               </li>
-              <li className="games__list--item">
-                <h3 className="title">Item 1</h3>
-                <img src="#" alt="game__preview" />
-                <p className="game__studio">Bandai Namco</p>
-              </li>
             </ul>
           </div>
         </div>

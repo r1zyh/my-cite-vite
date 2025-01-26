@@ -43,21 +43,21 @@ body.dark {
 }
 
 .games__list {
-  display: grid;  
+  display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 280px));
   gap: 16px;
-  height: auto;                
-  min-height: 200px;                    
-  transition: height 0.3s ease-in-out;   
+  height: auto;
+  min-height: 200px;
+  transition: height 0.3s ease-in-out;
   justify-content: center;
 }
 
 .games__list--item {
   background: #fff;
-  padding: 16px;                    
+  padding: 16px;
   border-radius: 8px;
   height: 100px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .title {
