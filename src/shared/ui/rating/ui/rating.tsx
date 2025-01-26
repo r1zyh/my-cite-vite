@@ -10,7 +10,12 @@ type TCustomRating = {
 export const CustomRating = ({ size, precision, value, readOnly }: TCustomRating): JSX.Element => {
   return (
     <Rating
-      sx={{ fontSize: size }}
+      sx={{
+        fontSize: size,
+        '& .MuiRating-iconEmpty': {
+          color: 'var(--color--foreground)',
+        },
+      }}
       name="simple-readonly"
       size="large"
       readOnly={readOnly}
