@@ -6,7 +6,9 @@ export const ThemeContext = createContext({
 });
 
 export const ThemeProvider = ({ children }: { children: ReactNode }) => {
-  const [isLightTheme, setIsLightTheme] = useState(true);
+  const [isLightTheme, setIsLightTheme] = useState(() => {
+    return window.matchMedia('(prefers-color-scheme: dark)').matches ? false : true;
+  });
 
   const toggleTheme = () => {
     setIsLightTheme((prev) => !prev);
@@ -15,6 +17,16 @@ export const ThemeProvider = ({ children }: { children: ReactNode }) => {
   useEffect(() => {
     document.body.className = isLightTheme ? 'light' : 'dark';
   }, [isLightTheme]);
+
+  useEffect(() => {
+    const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
+    const handleSystemThemeChange = (e: MediaQueryListEvent) => {
+      setIsLightTheme(!e.matches);
+    };
+    mediaQuery.addEventListener('change', handleSystemThemeChange);
+
+    return () => mediaQuery.removeEventListener('change', handleSystemThemeChange);
+  }, []);
 
   return (
     <ThemeContext.Provider value={{ isLightTheme, toggleTheme }}>{children}</ThemeContext.Provider>
