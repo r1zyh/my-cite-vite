@@ -22,4 +22,22 @@ body {
   margin: 0 auto;
   padding: 0;
   font-size: 16px;
+  color: var(--color--primary);
+  background-color: var(--color--background);
+}
+
+:root {
+  --color--background: #ffffff;
+  --color--primary: #20232a;
+  --color--foreground: #20232a;
+  --color--tertiary: #f8f9fb;
+  --border-style: solid;
+}
+
+body.dark {
+  --color--background: #20232a;
+  --color--primary: #ffffff;
+  --color--foreground: #c9c9c9;
+  --color--tertiary: #282c34;
+  --border-style: solid;
 }
